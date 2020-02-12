@@ -14,7 +14,7 @@ public class EjemploCompleto {
     public static boolean conectar() {
         boolean connected = false;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8&useSSL=false", "root", "URJC2019!");
             connected = true;
         } catch (SQLException e) {
             System.err.println("Error en la conexión: "+e.getLocalizedMessage());
