@@ -17,7 +17,7 @@ public class CreaTabla
         // Conecta con la base de datos
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8&useSSL=false", "root", "URJC2019!");
 
         // Sentencia de creación de tabla
             String createSql = "CREATE TABLE usuarios (iduser INT NOT NULL AUTO_INCREMENT, "
